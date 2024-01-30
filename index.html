@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="icon" href="./assets/cartoon-calculator.png" sizes="128x128" type="image/png">
+    <title>Calculator</title>
+</head>
+<body>
+    <main>
+        <input placeholder="0" type="text" id="display" readonly>
+        <button class="operators" id="btn-add" onclick="operateNums('+')">+</button>
+        <button class="operators" id="btn-sub" onclick="operateNums('-')">-</button>
+        <button class="operators" id="btn-mult" onclick="operateNums('x')">x</button>
+        <button class="operators" id="btn-divide" onclick="operateNums('/')">÷</button>
+        <button id="btn-seven" onclick="displayNum(7)">7</button>
+        <button id="btn-eight" onclick="displayNum(8)">8</button>
+        <button id="btn-nine" onclick="displayNum(9)">9</button>
+        <button id="btn-equals" onclick="displayResult()">=</button>
+        <button id="btn-four" onclick="displayNum(4)">4</button>
+        <button id="btn-five" onclick="displayNum(5)">5</button>
+        <button id="btn-six" onclick="displayNum(6)">6</button>
+        <button id="btn-one" onclick="displayNum(1)">1</button>
+        <button id="btn-two" onclick="displayNum(2)">2</button>
+        <button id="btn-three" onclick="displayNum(3)">3</button>
+        <button id="btn-zero" onclick="displayNum(0)">0</button>
+        <button id="btn-decimal" onclick="displayNum('.')">.</button>
+        <button id="btn-clear" onclick="clearDisplay()">C</button>
+    </main>
+    <script src="./main.js"></script>
+</body>
+</html>
